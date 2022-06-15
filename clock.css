@@ -1,0 +1,88 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* styling of analog clock div */
+.container{
+    position: relative;
+    display: block;
+    width: 40vw;
+    height: 40vw;
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+    margin: auto;
+    margin-top: 3em;
+}
+/* styling for center dot */
+.center{
+    position: absolute;
+    left: 48.7%;
+    top: 48.7%;
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    background-color: #090909;
+    border-radius: 50%;
+    z-index: 13;
+}
+/* styling for hour hand */
+.hour{
+    position: absolute;
+    left: 49%;
+    top: 30%;
+    transform-origin: bottom;
+    background-color: #6A7067;
+    width: 1%;
+    height: 20%;
+    z-index: 10;
+    border-radius: 1em;   
+} 
+/* styling for minute hand */
+.minute{
+    position: absolute;
+    left: 49.5%;
+    top: 25%;
+    transform-origin: bottom;
+    background-color: #279AF2;
+    width: 1%;
+    height: 25%;
+    z-index: 11;
+    border-radius: 1em;
+} 
+/* styling for second hand */
+.second{
+    position: absolute;
+    left: 49.5%;
+    top: 19.9%;
+    transform-origin: bottom;
+    background-color: #EB1750;
+    width: 1%;
+    height: 30%;
+    z-index: 12;
+    border-radius: 1em;
+}
+/* styling for digital clock div */
+.container2{
+    display: flex;
+    gap: 0.2em;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 1em;
+    background-color: #f22e76;
+    width: 20%;
+    padding: 0.3em;
+    border-radius: 0.4em;
+    font-size: 2em;
+    color: white;
+}
+/* setting for responsiveness */
+@media screen and (max-width:900px) {
+    .container{
+        margin-top: 10em;
+    }
+    .container2{
+        width: 20%;
+        font-size: 0.8em;
+        padding: 0.5em;
+    }
+}
