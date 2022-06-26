@@ -65,4 +65,8 @@ setInterval(function(){
     hourDigi.innerHTML = h + " : ";
     minuteDigi.innerHTML = m + " : ";
     secondDigi.innerHTML = s;
+    
+    <!--ticking sound of clock-->
+    var ticking = new Audio("tickling.mp3")
+    ticking.play();
 },1000);
